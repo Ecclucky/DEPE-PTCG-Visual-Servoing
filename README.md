@@ -37,3 +37,9 @@ experimental hardware.
 
 This work was supported by the National Natural Science Foundation of China
 under Grants 92371116, 62433005, and 62303400.
+
+## Experimental video
+
+[Watch the experimental video](videos/experiment-1.mp4).
+
+Real-flight demonstration of the quadrotor visual-servo experiments accompanying this paper.
