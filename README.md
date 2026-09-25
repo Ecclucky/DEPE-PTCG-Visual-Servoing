@@ -40,6 +40,8 @@ under Grants 92371116, 62433005, and 62303400.
 
 ## Experimental video
 
-[Watch the experimental video](videos/experiment-1.mp4).
+![Experimental video preview](videos/experiment-1-preview.gif)
+
+[Download the full video with audio (MP4, 250 KB)](https://github.com/Ecclucky/DEPE-PTCG-Visual-Servoing/raw/refs/heads/main/videos/experiment-1.mp4).
 
 Real-flight demonstration of the quadrotor visual-servo experiments accompanying this paper.
