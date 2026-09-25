@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>Relative_Pos_Cal</name>
+  <version>0.0.0</version>
+  <description>AprilTag relative-pose measurements for the TIE flight experiments.</description>
+  <maintainer email="dx120220100@stu.yzu.edu.cn">Enci Wang</maintainer>
+  <license>LicenseRef-Pending</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>eigen</depend>
+  <depend>libopencv-dev</depend>
+  <depend>librealsense2</depend>
+  <depend>visp</depend>
+</package>

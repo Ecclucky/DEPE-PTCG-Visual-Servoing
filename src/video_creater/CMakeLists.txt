@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(video_creater)
+
+add_compile_options(-std=c++11)
+find_package(catkin REQUIRED COMPONENTS roscpp image_transport cv_bridge sensor_msgs)
+find_package(OpenCV 4 REQUIRED)
+catkin_package(CATKIN_DEPENDS roscpp image_transport cv_bridge sensor_msgs)
+include_directories(${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
+add_executable(video_creater src/video_creater.cpp)
+target_link_libraries(video_creater ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+install(TARGETS video_creater RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

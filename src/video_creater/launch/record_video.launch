@@ -1,0 +1,8 @@
+<launch>
+  <arg name="image_topic" default="/camera/image"/>
+  <arg name="output_file" default="output.avi"/>
+  <node pkg="video_creater" type="video_creater" name="image_to_video_node" output="screen">
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="output_file" value="$(arg output_file)"/>
+  </node>
+</launch>

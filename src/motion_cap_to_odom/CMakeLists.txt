@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(motion_cap_to_odom)
+
+add_compile_options(-std=c++11)
+find_package(catkin REQUIRED COMPONENTS roscpp geometry_msgs nav_msgs)
+catkin_package(CATKIN_DEPENDS roscpp geometry_msgs nav_msgs)
+include_directories(${catkin_INCLUDE_DIRS})
+add_executable(motion_cap_to_odom src/motion_cap_to_odom.cpp)
+target_link_libraries(motion_cap_to_odom ${catkin_LIBRARIES})
+install(TARGETS motion_cap_to_odom RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

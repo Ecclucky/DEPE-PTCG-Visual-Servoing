@@ -1,0 +1,10 @@
+<launch>
+  <arg name="mass_kg" doc="Measured vehicle mass in kilograms"/>
+  <arg name="time_interval" default="1.0"/>
+  <arg name="output_file" default="thrust_calibration.csv"/>
+  <node pkg="px4ctrl" name="thrust_calibrate" type="thrust_calibrate.py" output="screen">
+    <param name="time_interval" value="$(arg time_interval)"/>
+    <param name="mass_kg" value="$(arg mass_kg)"/>
+    <param name="output_file" value="$(arg output_file)"/>
+  </node>
+</launch>

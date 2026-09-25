@@ -1,0 +1,25 @@
+# Catkin and CMake outputs
+/build/
+/devel/
+/install/
+/logs/
+.catkin_tools/
+**/CMakeFiles/
+**/CMakeCache.txt
+
+# Local editor settings and caches
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Runtime recordings (store selected, documented datasets separately)
+/results/
+/data1.csv
+/output.avi
+*.bag
+*.bag.active

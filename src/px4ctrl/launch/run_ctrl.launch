@@ -1,0 +1,10 @@
+<launch>
+  <arg name="odom_topic" default="/vins_fusion/imu_propagate"/>
+  <arg name="command_topic" default="/acc_cmd"/>
+  <arg name="config_file" default="$(find px4ctrl)/config/ctrl_param_fpv.yaml"/>
+  <node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl" output="screen">
+    <remap from="/vins_fusion/imu_propagate" to="$(arg odom_topic)"/>
+    <remap from="/acc_cmd" to="$(arg command_topic)"/>
+    <rosparam command="load" file="$(arg config_file)"/>
+  </node>
+</launch>
